@@ -6,14 +6,14 @@ const privKey = process.env.privKey;
 const infuraId = process.env.infuraId;
 module.exports = {
     networks: {
-        // development: {
-        //  host: "127.0.0.1",     // Localhost (default: none)
-        //  port: 8545,            // Standard Ethereum port (default: none)
-        //  network_id: "*",       // Any network (default: none)
-        // },
-        mumbai: {
+        development: {
+         host: "127.0.0.1",     // Localhost (default: none)
+         port: 7545,            // Standard Ethereum port (default: none)
+         network_id: "*",       // Any network (default: none)
+        },
+        sepolia: {
             provider: function () {
-                return new HDWalletProvider(privKey, "https://sepolia.infura.io/v3/" + infuraId);
+                return new HDWalletProvider(privKey, "https://eth-sepolia.g.alchemy.com/v2/" + infuraId);
             },
             gas: 10000000,
             gasPrice: 1500000000,

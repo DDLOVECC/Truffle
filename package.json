@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2",
     "@truffle/hdwallet-provider": "^2.1.9",
     "dotenv": "^16.0.3"
   },
@@ -9,7 +10,6 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
